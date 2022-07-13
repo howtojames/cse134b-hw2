@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>James' HTML Site</title>
+
+        <style>
+            * {border: 1px solid black;}
+        </style>
+        <script></script>
+        
+    </head>
+    <body>
+        <header> 
+            <h1> James' Portfolio</h1>
+            <h2> Homepage</h2>
+        </header>
+        
+        <main>
+
+        
+        <nav> 
+            <a href="persona.html">Persona Diagram</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="extra.html">Extra</a>
+        </nav>
+
+        <section>
+            <h5>Welcome to my page. Use the links above to navigate through the site.</h5>
+        </section>
+
+        <p>What is your reason to visit this website?</p>
+        <form>
+            <fieldset>
+                <legend>Reason</legend>
+                <input type="radio" id="1" name="'o1" value="Came here by accident.">
+                <label for="1"> Came here by accident.</label><br>
+
+                <input type="radio" id="2" name="'o2" value="I am a grader.">
+                <label for="2"> I am a grader.</label><br>
+
+                <input type="radio" id="3" name="'o3" value="I am a recruiter.">
+                <label for="3"> I am a recruiter.</label><br>
+
+                <label for="4">Other:</label><br>
+                <textarea id="4" name="o4" rows="4" cols= "50"></textarea>
+               
+                <!--maybe input tag could better-->
+                <button type="button">Submit</button>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pronouns</legend>
+                <label for="gender"> What are your pronouns?</label>
+                <select name="gender" id="gender">
+                    <option value="he/him">he/him</option>
+                    <option value="she/her">she/her</option>
+                    <option value="they/them">they/them</option>
+                  <option value="I prefer not to say">I perfer not to say</option>    
+                </select>
+                <br />
+                <!--Which was to submit button is better?-->
+                <input type="submit" value="Submit"> 
+            </fieldset>
+        </form>
+        
+        <form>
+            <fieldset>
+                <legend>Browser</legend>
+                    <label for="q3">What browser are you using?</label>
+                    <input list="blist" id="q3" name="q3">
+
+                    <datalist id="bist">
+                        <option value="Chrome">
+                        <option value="Edge">
+                        <option value="Safari">
+                        <option value="Firefox">
+                        <option value="Opera">
+                    </datalist>
+                    <input type="submit">
+            </fieldset>
+
+            <p>datalist supported on safari :(</p>
+        </form>
+
+
+
+        </main>
+        <footer>
+            <h6>&copy; James Inc. 2022</h6>
+        </footer>
+    </body>
+
+</html>
