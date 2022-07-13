@@ -57,10 +57,14 @@
                 <legend>Pronouns</legend>
                 <label for="gender"> What are your pronouns?</label>
                 <select name="gender" id="gender">
-                    <option value="he/him">he/him</option>
-                    <option value="she/her">she/her</option>
-                    <option value="they/them">they/them</option>
-                  <option value="I prefer not to say">I perfer not to say</option>    
+                    <optgroup label="pronouns">
+                        <option value="he/him">he/him</option>
+                        <option value="she/her">she/her</option>
+                        <option value="they/them">they/them</option>
+                    </optgroup>
+                    <optgroup label="other">
+                        <option value="I prefer not to say">I perfer not to say</option>
+                    </optgroup>  
                 </select>
                 <br />
                 <!--Which was to submit button is better?-->
@@ -71,10 +75,10 @@
         <form>
             <fieldset>
                 <legend>Browser</legend>
-                    <label for="q3">What browser are you using?</label>
-                    <input list="blist" id="q3" name="q3">
-
-                    <datalist id="bist">
+                    <label for="three">What browser are you using?</label>
+                    <input list="blist" name="three" id="three">
+                    <br />
+                    <datalist id="blist">
                         <option value="Chrome">
                         <option value="Edge">
                         <option value="Safari">
@@ -83,8 +87,7 @@
                     </datalist>
                     <input type="submit">
             </fieldset>
-
-            <p>datalist supported on safari :(</p>
+            <p>Unforfunately datalist dosen't work on safari.</p>
         </form>
 
 
